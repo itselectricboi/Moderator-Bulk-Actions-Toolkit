@@ -5,17 +5,16 @@ print("\nWelcome to the Reddit User Comments and Post Nuke Tool!\n")
 def main():
 
     # Initialize Reddit instance
-    reddit = praw.Reddit(client_id='WDpM4jQf4sNq0pEbH98vkg',
-    client_secret='uwCVG27Wiko3MxK6mzVsW68xQnL15g',
-    username='AkatsukiAke',
-    password='hxnVXVQUYnsD',
+    reddit = praw.Reddit(client_id='clientidhere',
+    client_secret='clientsecrethere',
+    username='redditusername',
+    password='redditpassword',
     user_agent='Moderator Action Toolkit')
 
     # Define the subreddit
-    subreddit = reddit.subreddit("GamingCirclejerk")
+    subreddit = reddit.subreddit("subredditname")
 
     # Define the user
-    #user = ["Mons00n_909", "New_Inspection619", "JimmyOmega111","LMayhem","SilverMoxxi","Chinnpoo","6sbeepboop","FitzyFarseer","Main-Reach-5325"]
     user_name = input("Enter the username of the user whose comments and posts you want to remove: ")
     user = reddit.redditor(user_name)
 
