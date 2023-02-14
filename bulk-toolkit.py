@@ -8,7 +8,7 @@ password='PASSWORD',
 user_agent='Moderator Action Toolkit')
 
 # Define the subreddit
-subreddit = reddit.subreddit("GamingCirclejerk")
+subreddit = reddit.subreddit("subredditname")
 
 # Define the user
 user_name = input("Enter the username of the user whose comments and posts you want to remove: ")
